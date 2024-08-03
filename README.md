@@ -1,5 +1,5 @@
 # ScratchNN_MNIST
- Creating a NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).Using only Numpy and Math
+NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html). Created using only Numpy and Math
 ---
  Built a simple neural network from scratch using only NumPy, without relying on any high-level libraries like TensorFlow, PyTorch, or Keras. The task was to classify digits from the MNIST dataset, which contains images of handwritten digits.
 
