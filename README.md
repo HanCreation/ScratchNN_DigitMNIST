@@ -12,7 +12,8 @@ NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).
  - Making function of weight initialization, forward pass, gradient descent, backward pass, update parameter, etc in python
  - Softmax and ReLU function and its derivative
 
-
+ ## Update
+ I just found out that torch and numpy have similar syntax, so I try to create another version with torch and with some support to GPU compute
 ---
 Coded and Created by Han Summer 2024
 
