@@ -14,6 +14,19 @@ NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).
 
  ## Update
  I just found out that torch and numpy have similar syntax, so I try to create another version with torch and with some support to GPU compute
+
+ Similarities:
+ - np.array ; torch.tensor
+ - np.random.randn ; torch.randn
+ - np.maximum ; torch.max
+ - np.exp ; (tensor variable).exp()
+ - np.dot ; using @ syntax to do matrix mul
+ - np.sum ; (tensor var).sum()
+
+ Add on notes:
+ - Torch has integrated one hot encoding func
+ - Shuffling tensor is not straight forward like using np.shuffle
+
 ---
 Coded and Created by Han Summer 2024
 
