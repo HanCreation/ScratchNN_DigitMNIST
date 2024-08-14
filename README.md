@@ -13,7 +13,7 @@ NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).
  - Softmax and ReLU function and its derivative
 
  ## Update
- I just found out that torch and numpy have similar syntax, so I try to create another version with torch and with some support to GPU compute
+ I just found out that torch and numpy have similar syntax, so I try to create another version with torch and with some support to GPU compute (Which overkill lol)
 
  Similarities:
  - np.array ; torch.tensor
@@ -22,10 +22,12 @@ NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).
  - np.exp ; (tensor variable).exp()
  - np.dot ; using @ syntax to do matrix mul
  - np.sum ; (tensor var).sum()
+ - np.argmax ; torch.argmax
 
  Add on notes:
- - Torch has integrated one hot encoding func
+ - Torch has integrated one hot encoding function (torch.nn.Functional.one_hot)
  - Shuffling tensor is not straight forward like using np.shuffle
+ - Always check the shape of the tensor
 
 ---
 Coded and Created by Han Summer 2024
