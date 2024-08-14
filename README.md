@@ -21,7 +21,7 @@ NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).
  - np.maximum ; torch.max
  - np.exp ; (tensor variable).exp()
  - np.dot ; using @ syntax to do matrix mul
- - np.sum ; (tensor var).sum()
+ - np.sum ; (tensor var).sum() -> the keepdim parameter is important, and the axis too
  - np.argmax ; torch.argmax
 
  Add on notes:
