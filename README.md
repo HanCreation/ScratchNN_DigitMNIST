@@ -28,7 +28,25 @@ NN for [Digit Recognizer (MNIST)](https://yann.lecun.com/exdb/mnist/index.html).
  - Torch has integrated one hot encoding function (torch.nn.Functional.one_hot)
  - Shuffling tensor is not straight forward like using np.shuffle
  - Always check the shape of the tensor
+ - Tried weight init using normal distribution numbers (randn) and it caused **Vanishing/Exploding Gradient**
+ - Better Initialization Techniques (Fixing Vanishing/Exploding Gradient Problem)
+ 
+        Xavier/Glorot Initialization:
 
+        For tanh activation: W = np.random.randn(shape) * np.sqrt(1 / n_in)
+        For sigmoid activation: W = np.random.randn(shape) * np.sqrt(2 / (n_in + n_out))
+
+
+        He Initialization (good for ReLU activations):
+        W = np.random.randn(shape) * np.sqrt(2 / n_in)
+        Scaled Uniform Initialization:
+        W = np.random.rand(shape) * 2 - 1) * scale_factor
+
+        Where:
+
+        n_in is the number of input neurons
+        n_out is the number of output neurons
+        scale_factor is a small number (e.g., 0.1)
 ---
 Coded and Created by Han Summer 2024
 
